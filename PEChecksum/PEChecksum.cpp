@@ -303,7 +303,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	if(OriginalCheckSum != CalculatedChecksum)
 	{
 		printf("Checksum mismatch, press any key to update it\r\n");
-		getchar();
 		int retX = UpdateChecksum(pDllName,CalculatedChecksum,OriginalCheckSum);
 		printf("retX: %X\r\n",retX);
 	}
